@@ -1,0 +1,23 @@
+// Place all the styles related to the Calculators controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.grid-field {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 12rem 12rem;
+  grid-template-rows: 6rem 6rem;
+  grid-gap: 1rem;
+
+  button {
+    background: #FFF;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 3px;
+
+    &:hover {
+      background: #777;
+      transition: background 2s linear;
+    }
+  }
+}

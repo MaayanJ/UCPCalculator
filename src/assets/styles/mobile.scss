@@ -1,0 +1,46 @@
+@import 'constants';
+
+.trinity {
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+body,
+html {
+  @media (max-width: $mobile) {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
+main {
+  .background_images {
+    @media (max-width: $mobile){
+      filter: opacity(40%);    
+      opacity: 0.4;
+    }
+  }
+
+  .wizard {
+    @media (max-width: $mobile) {
+      padding: 5% 0;
+      width: 100%;
+    }
+    .navigation{
+      @media (max-width: $mobile){
+        display: none;
+      }
+    }
+    .fieldset {
+      @media (max-width: $mobile) {
+        opacity: .5;
+        min-width: 90%;
+      }
+      .undefined{
+        @media (max-width: $mobile) {
+          width:40%;
+        }
+      }
+    }
+  }
+}

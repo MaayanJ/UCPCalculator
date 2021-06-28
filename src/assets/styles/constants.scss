@@ -1,0 +1,47 @@
+//
+// COLORS
+//
+$blue: #3C7CB3;
+$active_orange: #EF483E;
+$orange: #F85E10;
+$purple: #7C30D4;
+$green: #5FB42F;
+$yellow: #F0CF0F;
+$cyan: #48B1C6;
+$teal: #51B294;
+$red: #B33C3C;
+$pink: #E068DB;
+$eggshell: #F4F0E8;
+$creme: #fbf9f4;
+$brown: #99896F;
+$dark_brown: #231c10;
+$black: #444444;
+$brand_red: #EA463D;
+$brand_blue: #5CA2BF;
+$brand_gray: #777777;
+$brand_light_grey: #F7F7F7;
+$light_grey: #999999;
+$white: #FFFFFF;
+$slate: #3a4958;
+
+//
+// FONTS
+//
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+
+@font-face { 
+ font-family: "Museo";
+ src: url("../fonts/MuseoSans.otf") format("opentype")
+}
+
+$font_bold: 'Montserrat', helvetica neue, sans-serif;
+$font_normal: 'Museo', serif;
+
+$link_normal: $brand_blue;
+$link_hover: darken($brand_blue, 15%);
+//
+// mobile
+//
+$mobile: 800px;
+$tablet: 1350px;

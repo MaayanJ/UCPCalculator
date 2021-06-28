@@ -1,0 +1,160 @@
+main {
+  height: 100%;
+
+  .wizard {
+    padding: 5% 10%;
+    position: relative;
+
+    .boom {
+      padding: 2rem;
+
+      .header_svg {
+        display: flex;
+        margin: 2rem 0 2rem -4.2rem;
+
+        @media (max-width: $mobile){
+          margin: 0;
+        }
+
+        .info .info_icon {
+          display: none;
+
+          @media (max-width: $mobile){
+            display: contents;
+          }
+        }
+      }
+
+      .sub_container {
+        h4 {
+          width: 60%;
+          font-size: 1.6rem;
+          color: #3a4958;
+          line-height: 1.75em;
+
+          @media (max-width: $mobile) {
+            display: none;
+          }
+        }
+
+        h1 {
+          margin-top: 3rem;
+        }
+      }
+
+      .subheading {
+        display: flex;
+
+        h2 {
+          font-weight: 500;
+
+          @media (max-width: $mobile) {
+            font-size: 2rem;
+          }
+        }
+
+        .info {
+          margin: 0 0 0 1rem;
+        }
+      }
+    }
+  }
+
+  .navigation {
+    padding: 2rem 0 0 2.5rem;
+
+    &.hidden {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+
+      li button {
+        cursor: pointer;
+        display: flex;
+
+        &.selected span { color: $brand_red; }
+
+        span {
+          padding-right: 1.4rem;
+          font-family: "Montserrat";
+          font-weight: 500;
+          font-size: 1.8rem;
+        }
+
+        svg {
+          height: 4rem;
+        }
+      }
+    }
+  }
+
+  nav.crement_btns {
+
+    button {
+      padding: .5rem;
+      border-radius: 2rem;
+      min-width: 15rem;
+      min-height: 3rem;
+      border: 0.2rem solid $brand_red;
+      margin: 2.5rem 0 0 2.5rem;
+      transition: 0.24s linear;
+      cursor: pointer;
+      font-size: 1.8rem;
+
+      @media (max-width: $mobile){
+        margin: 3% 5% 5% 0;
+      }
+
+      &.previous {
+        color: $brand_red;
+        background-color: $white;
+        &:hover{
+          background: linear-gradient(to top left, #EF483E, #FF6934);
+          color: $white;
+        }
+      }
+
+      &.continue {
+        color: $brand_red;
+        background-color: $white;
+        &:hover{
+          background: linear-gradient(to top left, #EF483E, #FF6934);
+          color: $white;
+        }
+      }
+    }
+
+    div.termsAndConditions {
+      display: flex;
+      flex-direction: row;
+      margin: 2.5rem 0 0 5.5rem;
+
+      span {
+        padding: 0.5rem;
+      }
+    }
+  }
+
+  .background_images {
+    margin: 0;
+    right: 0;
+    top: 0%;
+    position: fixed;
+    height: 100%;
+    z-index: -100;
+
+    .background {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .trinity {
+      bottom: 0%;
+      right: 0;
+      position: absolute;
+      z-index: 100;
+    }
+  }
+}

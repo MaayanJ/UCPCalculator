@@ -1,0 +1,62 @@
+svg.info_icon {
+  cursor: pointer;
+}
+
+.info {
+  display: grid;
+  width: fit-content;
+  max-width: 10rem;
+
+  p {
+    background-color: #5CA2BF;
+    border-radius: .5rem;
+    
+    font-family: "Museo";
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+
+    color: #ffffff;
+    margin: 0rem 5rem 0rem 3rem;
+    padding: 1rem;
+    position: absolute;
+
+    @media (max-width: $mobile){
+      margin-top: 2rem;
+      left: 0;
+      max-width: 34rem;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+  
+  .info_icon {
+    width: 4rem;
+    margin-left: 1rem;
+  }
+}
+// this has gotta go somewhere else (accordian arrow color)
+.dSllCE {
+  stroke: red;
+  fill: red;
+}
+.jfbKsv {
+  padding: 10px;
+}
+// grommet checkbox recolor
+.hjQCXB {
+  border: 2px solid #ed483d;
+
+.bVmNDQ {
+  :focus {
+    outline: none;
+  }
+}
+
+}
+.excGvx {
+  stroke: #ed483d;
+}

@@ -1,0 +1,17 @@
+div.header {
+  background: #FFF;
+  width: 100%;
+
+  img.logo {
+    margin: 2.5rem 0rem 1.5rem 4.5rem;
+    @media (max-width: $mobile){
+      margin: 3% 0% 3% 30%;
+    }
+  }
+}
+
+.border {
+  background: $brand_red;
+  height: 1rem;
+  width: 100%;
+}
